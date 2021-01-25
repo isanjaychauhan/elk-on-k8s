@@ -1,0 +1,3 @@
+kubectl patch svc elasticsearch -n default -p '{"spec": {"type": "LoadBalancer", "externalIPs":["192.168.2.206"]}}'
+
+kubectl patch svc kibana -n default -p '{"spec": {"type": "LoadBalancer", "externalIPs":["192.168.2.206"]}}'
